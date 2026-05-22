@@ -42,7 +42,8 @@ export class RestaurantsRepository {
   async findById(id: string): Promise<Restaurant | undefined> {
     // simulate DB latency
     await new Promise((resolve) => setTimeout(resolve, 50));
-    return this.store.get(id);
+    const r = this.store.get(id);
+    return r ? structuredClone(r) : undefined;
   }
 
   async save(restaurant: Restaurant): Promise<void> {
