@@ -4,11 +4,11 @@ Mini-app NestJS usata nello Stage 2 del colloquio tecnico. Branch `exercise-1` c
 
 ## Setup
 
-Servono **Node 20+** e **pnpm**.
+Servono **Node 20+** e **npm**.
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Il server parte su `http://localhost:3000`.
@@ -51,7 +51,7 @@ curl http://localhost:3000/restaurants/1
 # → avgRating: 4.5  ❌ (atteso ~4.6)
 ```
 
-Riavviando il server (`Ctrl+C` e poi `pnpm dev`), il GET successivo ritorna correttamente `4.6`.
+Riavviando il server (`Ctrl+C` e poi `npm run dev`), il GET successivo ritorna correttamente `4.6`.
 
 ## Il tuo task
 
